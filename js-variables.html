@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, x, y, and z are variables.</p>
+    <p id="demo"></p>
+
+    <h2>JavaScript Variables</h2>
+
+    <p>In this example, a, b, and c are variables.</p>
+
+    <p id="demo1"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, d, e, and f are undeclared variables.</p>
+
+    <p id="demo2"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, price1, price2, and total are variables.</p>
+
+    <p id="demo3"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+
+    <p id="demo4"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>Create a variable, assign a value to it, and display it:</p>
+
+    <p id="demo5"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>You can declare many variables in one statement.</p>
+
+    <p id="demo6"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>The result of adding 5 + 2 + 3 is:</p>
+    <p id="demo7"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>The result of adding "John" + " " + "Doe" is:</p>
+    <p id="demo8"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>The result of adding "5" + 2 + 3 is:</p>
+    <p id="demo9"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>The result of adding 2 + 3 + "5" is:</p>
+    <p id="demo10"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>The dollar sign is treated as a letter in JavaScript names.</p>
+
+    <p id="demo11"></p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>The underscore is treated as a letter in JavaScript names.</p>
+
+    <p id="demo12"></p>
+
+    <script>
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      document.getElementById("demo").innerHTML = "The value of z is: " + z;
+    </script>
+
+    <script>
+      let a = 5;
+      let b = 6;
+      let c = a + b;
+      document.getElementById("demo1").innerHTML = "The value of z is: " + c;
+    </script>
+
+    <script>
+      d = 5;
+      e = 6;
+      f = d + e;
+      document.getElementById("demo2").innerHTML = "The value of z is: " + f;
+    </script>
+
+    <script>
+      const price1 = 5;
+      const price2 = 6;
+      let total = price1 + price2;
+      document.getElementById("demo3").innerHTML = "The total is: " + total;
+    </script>
+
+    <script>
+      const pi = 3.14;
+      let person = "John Doe";
+      let answer = "Yes I am!";
+
+      document.getElementById("demo4").innerHTML =
+        pi + "<br>" + person + "<br>" + answer;
+    </script>
+
+    <script>
+      let carName = "Volvo";
+      document.getElementById("demo5").innerHTML = carName;
+    </script>
+
+    <script>
+      let persons = "John Doe",
+        carNames = "Volvo",
+        price = 200;
+      document.getElementById("demo6").innerHTML = carNames;
+    </script>
+
+    <script>
+      let x = 5 + 2 + 3;
+      document.getElementById("demo7").innerHTML = x;
+    </script>
+
+    <script>
+      let x = "John" + " " + "Doe";
+      document.getElementById("demo8").innerHTML = x;
+    </script>
+
+    <script>
+      let v = "5" + 2 + 3;
+      document.getElementById("demo9").innerHTML = v;
+    </script>
+
+    <script>
+      let l = 2 + 3 + "5";
+      document.getElementById("demo10").innerHTML = x;
+    </script>
+
+    <script>
+      let $$$ = 2;
+      let $myMoney = 5;
+      document.getElementById("demo11").innerHTML = $$$ + $myMoney;
+    </script>
+
+    <script>
+      let _x = 2;
+      let _100 = 5;
+
+      document.getElementById("demo12").innerHTML = _x + _100;
+    </script>
+  </body>
+</html>
