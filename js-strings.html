@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Strings</h2>
+
+    <p id="demo"></p>
+
+
+
+
+    <h2>JavaScript Strings</h2>
+
+    <p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+    <p id="demo1"></p>
+
+
+    <h2>JavaScript Strings</h2>
+
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+    <p id="demo2"></p>
+
+
+    <h2>JavaScript String Properties</h2>
+
+    <p>The length property returns the length of a string:</p>
+
+    <p id="demo3"></p>
+
+
+    <h2>JavaScript Statements</h2>
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo4"></p>
+
+
+    <h2>JavaScript Strings</h2>
+
+    <p id="demo5"></p>
+
+
+    <h2>Never Create Strings as Objects</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="demo6"></p>
+
+
+    <h2>Never Create Strings as Objects</h2>
+    <p>JavaScript objects cannot be compared.</p>
+
+    <p id="demo7"></p>
+
+
+    <script>
+        let name = "John Doe";  // String written inside quotes
+        document.getElementById("demo").innerHTML = name;
+    </script>
+
+
+    <script>
+        let carName1 = "Volvo XC60"; // Double quotes
+        let carName2 = 'Volvo XC60'; // Single quotes
+
+        document.getElementById("demo1").innerHTML =
+            carName1 + " " + carName2; 
+    </script>
+
+
+
+    <script>
+        let answer1 = "It's alright";
+        let answer2 = "He is called 'Johnny'";
+        let answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo2").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3; 
+    </script>
+
+
+
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo3").innerHTML = text.length;
+    </script>
+
+    <script>
+        document.getElementById("demo4").innerHTML =
+            "Hello Dolly!";
+    </script>
+
+    <script>
+        // x is a string
+        let x = "John";
+
+        // y is an object
+        let y = new String("John");
+
+        document.getElementById("demo5").innerHTML =
+            typeof x + "<br>" + typeof y;
+    </script>
+
+
+    <script>
+        let a = "John";        // a is a string
+        let b = new String("John");  // b is an object
+        document.getElementById("demo6").innerHTML = (a == b);
+    </script>
+
+
+
+    <script>
+        let c = new String("John");  // c is an object
+        let d = new String("John");  // d is an object
+        document.getElementById("demo7").innerHTML = (c === d);
+    </script>
+
+</body>
+
+</html>
