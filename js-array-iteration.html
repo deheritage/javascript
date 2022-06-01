@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2>JavaScript Array.forEach()</h2>
+  <p>Calls a function once for each array element.</p>
+
+  <p id="demo"></p>
+
+  <h2>JavaScript Array.map()</h2>
+  <p>Creates a new array by performing a function on each array element.</p>
+
+  <p id="demo1"></p>
+
+
+  <h2>JavaScript Array.filter()</h2>
+  <p>Creates a new array with all array elements that passes a test.</p>
+
+  <p id="demo2"></p>
+
+
+  <h2>JavaScript Array.reduce()</h2>
+  <p>This example finds the sum of all numbers in an array:</p>
+
+  <p id="demo3"></p>
+
+
+
+  <h2>JavaScript Array.every()</h2>
+  <p>The every() method checks if all array values pass a test.</p>
+
+  <p id="demo4"></p>
+
+
+  <h2>JavaScript Array.indexOf()</h2>
+
+  <p id="demo5"></p>
+
+
+  <h2>JavaScript Array.lastIndexOf()</h2>
+  <p id="demo6"></p>
+
+
+
+  <h2>JavaScript Array.find()</h2>
+  <p id="demo7"></p>
+
+
+  <h2>JavaScript Array.findIndex()</h2>
+  <p id="demo8"></p>
+
+
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>The Array.from() method returns an Array object from any object with a length property or any iterable object.</p>
+
+  <p id="demo9"></p>
+
+
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>The Array.keys() method returns an Array Iterator object with the keys of the array.</p>
+
+  <p id="demo10"></p>
+
+
+
+  <h1>JavaScript Arrays</h1>
+  <h2>The entries() method</h2>
+
+  <p>entries() returns an Array Iterator object with key/value pairs:</p>
+
+  <p id="demo11"></p>
+
+
+
+  <h1>Array includes()</h1>
+
+  <p>Check if the fruit array contains "Mango":</p>
+
+  <p id="demo12"></p>
+
+
+
+
+
+
+  <script>
+    const numbers = [45, 4, 9, 16, 25];
+
+    let txt = "";
+    numbers.forEach(myFunction);
+    document.getElementById("demo").innerHTML = txt;
+
+    function myFunction(value, index, array) {
+      txt += value + "<br>";
+    }
+  </script>
+
+  <script>
+    const numbers1 = [45, 4, 9, 16, 25];
+    const numbers2 = numbers1.map(myFunction);
+
+    document.getElementById("demo1").innerHTML = numbers2;
+
+    function myFunction(value, index, array) {
+      return value * 2;
+    }
+  </script>
+
+
+  <script>
+    const numberss = [45, 4, 9, 16, 25];
+    const over18 = numberss.filter(myFunction);
+
+    document.getElementById("demo2").innerHTML = over18;
+
+    function myFunction(value, index, array) {
+      return value > 18;
+    }
+  </script>
+
+  <script>
+    const number = [45, 4, 9, 16, 25];
+    let sum = number.reduce(myFunction);
+
+    document.getElementById("demo3").innerHTML = "The sum is " + sum;
+
+    function myFunction(total, value, index, array) {
+      return total + value;
+    }
+  </script>
+
+
+  <script>
+    const numbersss = [45, 4, 9, 16, 25];
+    let allOver18 = numbers.every(myFunction);
+
+    document.getElementById("demo4").innerHTML = "All over 18 is " + allOver18;
+
+    function myFunction(value, index, array) {
+      return value > 18;
+    }
+  </script>
+
+
+  <script>
+    const fruits = ["Apple", "Orange", "Apple", "Mango"];
+    let position = fruits.indexOf("Apple") + 1;
+
+    document.getElementById("demo5").innerHTML = "Apple is found in position " + position;
+  </script>
+
+
+  <script>
+    const fruit = ["Apple", "Orange", "Apple", "Mango"];
+    let positions = fruits.lastIndexOf("Apple") + 1;
+
+    document.getElementById("demo6").innerHTML = "Apple is found in position " + positions;
+  </script>
+
+
+  <script>
+    const numberssss = [4, 9, 16, 25, 29];
+    let first = numberssss.find(myFunction);
+
+    document.getElementById("demo7").innerHTML = "First number over 18 is " + first;
+
+    function myFunction(value, index, array) {
+      return value > 18;
+    }
+  </script>
+
+
+  <script>
+    const numberse = [4, 9, 16, 25, 29];
+
+    document.getElementById("demo8").innerHTML = "First number over 18 has index " + numberse.findIndex(myFunction);
+
+    function myFunction(value, index, array) {
+      return value > 18;
+    }
+  </script>
+
+
+
+  <script>
+    const myArr = Array.from("ABCDEFG");
+    document.getElementById("demo9").innerHTML = myArr;
+  </script>
+
+
+
+  <script>
+    const frit = ["Banana", "Apple", "Orange", "Mango"];
+    const keys = frit.keys();
+
+    let text = "";
+    for (let x of keys) {
+      text += x + "<br>";
+    }
+
+    document.getElementById("demo10").innerHTML = text;
+  </script>
+
+
+  <script>
+    const fruts = ["Banana", "Orange", "Apple", "Mango"];
+    const f = fruts.entries();
+
+    for (let x of f) {
+      document.getElementById("demo11").innerHTML += x + "<br>";
+    }
+  </script>
+
+
+
+  <script>
+    const fruis = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo12").innerHTML = fruis.includes("Mango");
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
