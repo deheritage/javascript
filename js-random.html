@@ -10,53 +10,44 @@
 
     <p id="demo"></p>
 
-
     <h2>JavaScript Math</h2>
 
-    <p>Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both 
-    included):</p>
-    
+    <p>
+      Math.floor(Math.random() * 10) returns a random integer between 0 and 9
+      (both included):
+    </p>
+
     <p id="demo1"></p>
-    
+
     <h2>JavaScript Math.random()</h2>
 
-    <p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
-    and 9 (both included):</p>
-    
-<button onclick="document.getElementById('demo2').innerHTML = getRndInteger(0,10)">Click Me</button>
+    <p>
+      Every time you click the button, getRndInteger(min, max) returns a random
+      number between 0 and 9 (both included):
+    </p>
 
-<p id="demo2"></p>
+    <button
+      onclick="document.getElementById('demo2').innerHTML = getRndInteger(0,10)"
+    >
+      Click Me
+    </button>
 
-
-
-
-
-
-
-
-
-
+    <p id="demo2"></p>
 
     <script>
       document.getElementById("demo").innerHTML = Math.random();
     </script>
 
-
-
-<script>
-    document.getElementById("demo1").innerHTML =
-    Math.floor(Math.random() * 10);
+    <script>
+      document.getElementById("demo1").innerHTML = Math.floor(
+        Math.random() * 10
+      );
     </script>
-    
 
-<script>
-    function getRndInteger(min, max) {
+    <script>
+      function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
-    }
-</script>
-
-
-
-
+      }
+    </script>
   </body>
 </html>

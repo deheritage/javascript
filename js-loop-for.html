@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript For Loop</h2>
+
+    <p id="demo"></p>
+    <h2>JavaScript For Loop</h2>
+
+    <p id="demo1"></p>
+
+    <h2>JavaScript For Loop</h2>
+
+    <p id="demo2"></p>
+
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+      let text = "";
+      for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <script>
+      let texts = "";
+
+      for (let i = 0; i < 5; i++) {
+        texts += "The number is " + i + "<br>";
+      }
+
+      document.getElementById("demo1").innerHTML = texts;
+    </script>
+
+    <script>
+      const car = ["BMW", "Volvo", "Saab", "Ford"];
+      let i, len, textss;
+      for (i = 0, len = car.length, textss = ""; i < len; i++) {
+        textss += car[i] + "<br>";
+      }
+      document.getElementById("demo2").innerHTML = textss;
+    </script>
+  </body>
+</html>

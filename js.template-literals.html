@@ -1,116 +1,93 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h2>JavaScript Template Literals</h2>
 
-<h2>JavaScript Template Literals</h2>
+    <p>Template literals use back-ticks (``) to define a string:</p>
 
-<p>Template literals use back-ticks (``) to define a string:</p>
+    <p id="demo"></p>
 
-<p id="demo"></p>
+    <h2>JavaScript Template Literals</h2>
 
-<h2>JavaScript Template Literals</h2>
+    <p>
+      With back-ticks, you can use both single and double quotes inside a
+      string:
+    </p>
 
-<p>With back-ticks, you can use both single and double quotes inside a string:</p>
+    <p id="demo1"></p>
 
-<p id="demo1"></p>
+    <h2>JavaScript Template Literals</h2>
 
-<h2>JavaScript Template Literals</h2>
+    <p>Template literals allows multiline strings:</p>
 
-<p>Template literals allows multiline strings:</p>
+    <p id="demo2"></p>
 
-<p id="demo2"></p>
+    <h2>JavaScript Template Literals</h2>
 
-<h2>JavaScript Template Literals</h2>
+    <p>Template literals allows variables in strings:</p>
 
-<p>Template literals allows variables in strings:</p>
+    <p id="demo3"></p>
 
-<p id="demo3"></p>
+    <h2>JavaScript Template Literals</h2>
 
-<h2>JavaScript Template Literals</h2>
+    <p>Template literals allows variables in strings:</p>
 
-<p>Template literals allows variables in strings:</p>
+    <p id="demo4"></p>
 
-<p id="demo4"></p>
+    <h2>JavaScript Template Literals</h2>
 
+    <p>Template literals allows variables in strings:</p>
 
-<h2>JavaScript Template Literals</h2>
+    <p id="demo5"></p>
 
-<p>Template literals allows variables in strings:</p>
-
-<p id="demo5"></p>
-
-
-
-
-
-
-
-
-
-
-
-<script>
-let text = `Hello world!`;
-document.getElementById("demo").innerHTML = text;
-</script>
-
-
-<script>
-    let texts = `He's often called "Johnny"`;
-    document.getElementById("demo1").innerHTML = texts;
+    <script>
+      let text = `Hello world!`;
+      document.getElementById("demo").innerHTML = text;
     </script>
 
+    <script>
+      let texts = `He's often called "Johnny"`;
+      document.getElementById("demo1").innerHTML = texts;
+    </script>
 
-<script>
-    let texte =
-    
-    `The quick
+    <script>
+      let texte = `The quick
     brown fox
     jumps over
     the lazy dog`;
-    
-    document.getElementById("demo2").innerHTML = texte;
-    </script>
 
-<script>
-    let firstName = "John";
-    let lastName = "Doe";
-    
-    let textd = `Welcome ${firstName}, ${lastName}!`;
-    
-    document.getElementById("demo3").innerHTML = textd;
+      document.getElementById("demo2").innerHTML = texte;
     </script>
-    
 
     <script>
-        let price = 10;
-        let VAT = 0.25;
-        let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
-        
-        document.getElementById("demo4").innerHTML = total;
-        </script>
+      let firstName = "John";
+      let lastName = "Doe";
 
-<script>
-    let header = "Templates Literals";
-    let tags = ["template literals", "javascript", "es6"];
+      let textd = `Welcome ${firstName}, ${lastName}!`;
 
-    let html = '<h2>${header}</h2><ul>';
+      document.getElementById("demo3").innerHTML = textd;
+    </script>
 
-    for (const x of tags) {
-        html += '<li>${x}</li>';
-    }
+    <script>
+      let price = 10;
+      let VAT = 0.25;
+      let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 
-    html += '</ul>';
-    document.getElementById("demo5").innerHTML = html;
-</script>
+      document.getElementById("demo4").innerHTML = total;
+    </script>
 
+    <script>
+      let header = "Templates Literals";
+      let tags = ["template literals", "javascript", "es6"];
 
+      let html = "<h2>${header}</h2><ul>";
 
+      for (const x of tags) {
+        html += "<li>${x}</li>";
+      }
 
-
-
-
-
-
-</body>
+      html += "</ul>";
+      document.getElementById("demo5").innerHTML = html;
+    </script>
+  </body>
 </html>

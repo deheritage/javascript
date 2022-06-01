@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <h2>JavaScript String Methods</h2>
 
-    <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+    <p>
+      The indexOf() method returns the position of the first occurrence of a
+      specified text:
+    </p>
 
     <p id="demo"></p>
 
     <h2>JavaScript String Methods</h2>
 
-    <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+    <p>
+      The lastIndexOf() method returns the position of the last occurrence of a
+      specified text:
+    </p>
 
     <p id="demo1"></p>
 
     <h2>JavaScript String Methods</h2>
 
-    <p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+    <p>
+      The lastIndexOf() method returns the position of the last occurrence of a
+      specified text:
+    </p>
 
     <p id="demo2"></p>
-
 
     <h2>JavaScript String Methods</h2>
 
@@ -28,10 +34,12 @@
 
     <p id="demo3"></p>
 
-
     <h2>JavaScript String Methods</h2>
 
-    <p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+    <p>
+      The indexOf() method accepts a second parameter as the starting position
+      for the search:
+    </p>
 
     <p id="demo4"></p>
 
@@ -41,7 +49,6 @@
 
     <p id="demo5"></p>
 
-
     <h2>JavaScript String Search</h2>
 
     <p>Check if a string includes "world":</p>
@@ -49,8 +56,6 @@
     <p id="demo6"></p>
 
     <p>The includes() method is not supported in Internet Explorer.</p>
-
-
 
     <h2>JavaScript Strings</h2>
 
@@ -60,7 +65,6 @@
 
     <p>The startsWith() method is not supported in Internet Explorer.</p>
 
-
     <h2>JavaScript Strings</h2>
 
     <p>Check if a string ends with "Doe":</p>
@@ -69,64 +73,49 @@
 
     <p>The endsWith() method is not supported in Internet Explorer.</p>
 
-
     <script>
-        let str = "Please locate where 'locate' occurs!";
-        document.getElementById("demo").innerHTML = str.indexOf("locate");
+      let str = "Please locate where 'locate' occurs!";
+      document.getElementById("demo").innerHTML = str.indexOf("locate");
     </script>
 
     <script>
-        let strr = "Please locate where 'locate' occurs!";
-        document.getElementById("demo1").innerHTML = str.lastIndexOf("locate");
+      let strr = "Please locate where 'locate' occurs!";
+      document.getElementById("demo1").innerHTML = str.lastIndexOf("locate");
     </script>
 
     <script>
-        let strrr = "Please locate where 'locate' occurs!";
-        document.getElementById("demo2").innerHTML = str.lastIndexOf("locate");
-    </script>
-
-
-    <script>
-        let stre = "Please locate where 'locate' occurs!";
-        document.getElementById("demo3").innerHTML = str.indexOf("John");
-    </script>
-
-
-
-    <script>
-        let stra = "Please locate where 'locate' occurs!";
-        document.getElementById("demo4").innerHTML = str.indexOf("locate", 15);
+      let strrr = "Please locate where 'locate' occurs!";
+      document.getElementById("demo2").innerHTML = str.lastIndexOf("locate");
     </script>
 
     <script>
-        let textl = "The rain in SPAIN stays mainly in the plain";
-        document.getElementById("demo5").innerHTML = textl.match(/ain/g);
+      let stre = "Please locate where 'locate' occurs!";
+      document.getElementById("demo3").innerHTML = str.indexOf("John");
     </script>
-
 
     <script>
-        let texts = "Hello world, welcome to the universe.";
-        document.getElementById("demo6").innerHTML = texts.includes("world");
+      let stra = "Please locate where 'locate' occurs!";
+      document.getElementById("demo4").innerHTML = str.indexOf("locate", 15);
     </script>
-
 
     <script>
-        let texth = "Hello world, welcome to the universe.";
-        document.getElementById("demo7").innerHTML = texth.startsWith("Hello");
+      let textl = "The rain in SPAIN stays mainly in the plain";
+      document.getElementById("demo5").innerHTML = textl.match(/ain/g);
     </script>
-
 
     <script>
-        let text = "John Doe";
-        document.getElementById("demo8").innerHTML = text.endsWith("Doe");
+      let texts = "Hello world, welcome to the universe.";
+      document.getElementById("demo6").innerHTML = texts.includes("world");
     </script>
 
+    <script>
+      let texth = "Hello world, welcome to the universe.";
+      document.getElementById("demo7").innerHTML = texth.startsWith("Hello");
+    </script>
 
-
-
-
-
-
-</body>
-
+    <script>
+      let text = "John Doe";
+      document.getElementById("demo8").innerHTML = text.endsWith("Doe");
+    </script>
+  </body>
 </html>

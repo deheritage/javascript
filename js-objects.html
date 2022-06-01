@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<body>
-
+  <body>
     <h2>JavaScript Variables</h2>
     <p id="demo"></p>
 
@@ -10,38 +8,44 @@
 
     <p id="demo1"></p>
 
-
     <h2>JavaScript Objects</h2>
 
     <p id="demo2"></p>
 
-
-
-
-
-
     <script>
-        //Creat and display a variable:
-        let car = "Fiat";
-        document.getElementById("demo").innerHTML = car;
+      //Creat and display a variable:
+      let car = "Fiat";
+      document.getElementById("demo").innerHTML = car;
     </script>
 
     <script>
-        //Create an object:
-        const laptop = { type: "Lenovo", model: "500", color: "white" };
+      //Create an object:
+      const laptop = { type: "Lenovo", model: "500", color: "white" };
 
-        //Display some data from the object:
-        document.getElementById("demo1").innerHTML = "The laptop type is " + laptop.type;
+      //Display some data from the object:
+      document.getElementById("demo1").innerHTML =
+        "The laptop type is " + laptop.type;
     </script>
 
     <script>
-        //Create an object:
-        const person = { firstName: "John", lastName: "Doe", age: 50, eyecolor: "blue" };
+      //Create an object:
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyecolor: "blue",
+      };
 
-        //Display some data from the object:
-        document.getElementById("demo2").innerHTML = person.firstName + " is " + person.age + "years old." +
-            person.firstName + "eye color" + " is " + person.eyecolor;
+      //Display some data from the object:
+      document.getElementById("demo2").innerHTML =
+        person.firstName +
+        " is " +
+        person.age +
+        "years old." +
+        person.firstName +
+        "eye color" +
+        " is " +
+        person.eyecolor;
     </script>
-</body>
-
+  </body>
 </html>

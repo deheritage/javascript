@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<body>
+  <body>
     <h2>JavaScript Arrays</h2>
     <p id="demo"></p>
 
@@ -11,30 +10,32 @@
 
     <h2>JavaScript Arrays</h2>
 
-    <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+    <p>
+      JavaScript array elements are accessed using numeric indexes (starting
+      from 0).
+    </p>
 
     <p id="demo2"></p>
 
-
     <h2>JavaScript Arrays</h2>
 
-    <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+    <p>
+      JavaScript array elements are accessed using numeric indexes (starting
+      from 0).
+    </p>
 
     <p id="demo3"></p>
-
 
     <h2>JavaScript Arrays</h2>
     <p>The length property returns the length of an array.</p>
 
     <p id="demo4"></p>
 
-
     <h2>JavaScript Arrays</h2>
 
     <p>The best way to loop through an array is using a standard for loop:</p>
 
     <p id="demo5"></p>
-
 
     <h2>JavaScript Arrays</h2>
 
@@ -50,102 +51,82 @@
 
     <p id="demo7"></p>
 
-
     <h2>JavaScript Arrays</h2>
 
     <p id="demo8"></p>
 
-
-
-
-
-
-
     <script>
-        const cars = ["Saab", "Volvo", "BMW"];
-        document.getElementById("demo").innerHTML = cars;
-    </script>
-
-
-    <script>
-        const carss = [];
-        carss[0] = "Saab";
-        carss[1] = "Volvo";
-        carss[2] = "BMW";
-        document.getElementById("demo1").innerHTML = carss;
-    </script>
-
-
-
-    <script>
-        const carsss = ["Saab", "Volvo", "BMW"];
-        document.getElementById("demo2").innerHTML = carsss[0];
-    </script>
-
-
-
-    <script>
-        const carse = ["Saab", "Volvo", "BMW"];
-        carse[0] = "Opel";
-        document.getElementById("demo3").innerHTML = carse;
-    </script>
-
-
-
-    <script>
-        const fruits = ["Banana", "Orange", "Apple", "Mango"];
-        document.getElementById("demo4").innerHTML = fruits.length;
-    </script>
-
-
-    <script>
-        const fruitss = ["Banana", "Orange", "Apple", "Mango"];
-        let flen = fruitss.length;
-
-        let text = "<ul>";
-        for (let i = 0; i < flen; i++) {
-            text += "<li>" + fruitss[i] + "</li>";
-        }
-        text += "</ul>";
-
-        document.getElementById("demo5").innerHTML = text;
+      const cars = ["Saab", "Volvo", "BMW"];
+      document.getElementById("demo").innerHTML = cars;
     </script>
 
     <script>
-        const fruitsss = ["Banana", "Orange", "Apple", "Mango"];
-
-        let texts = "<ul>";
-        fruits.forEach(myFunction);
-        text += "</ul>";
-        document.getElementById("demo6").innerHTML = texts;
-
-        function myFunction(value) {
-            texts += "<li>" + value + "</li>";
-        } 
+      const carss = [];
+      carss[0] = "Saab";
+      carss[1] = "Volvo";
+      carss[2] = "BMW";
+      document.getElementById("demo1").innerHTML = carss;
     </script>
 
     <script>
-        const fruitse = ["Banana", "Orange", "Apple"];
+      const carsss = ["Saab", "Volvo", "BMW"];
+      document.getElementById("demo2").innerHTML = carsss[0];
+    </script>
+
+    <script>
+      const carse = ["Saab", "Volvo", "BMW"];
+      carse[0] = "Opel";
+      document.getElementById("demo3").innerHTML = carse;
+    </script>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo4").innerHTML = fruits.length;
+    </script>
+
+    <script>
+      const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+      let flen = fruitss.length;
+
+      let text = "<ul>";
+      for (let i = 0; i < flen; i++) {
+        text += "<li>" + fruitss[i] + "</li>";
+      }
+      text += "</ul>";
+
+      document.getElementById("demo5").innerHTML = text;
+    </script>
+
+    <script>
+      const fruitsss = ["Banana", "Orange", "Apple", "Mango"];
+
+      let texts = "<ul>";
+      fruits.forEach(myFunction);
+      text += "</ul>";
+      document.getElementById("demo6").innerHTML = texts;
+
+      function myFunction(value) {
+        texts += "<li>" + value + "</li>";
+      }
+    </script>
+
+    <script>
+      const fruitse = ["Banana", "Orange", "Apple"];
+      document.getElementById("demo7").innerHTML = fruitse;
+
+      function myFunction() {
+        fruitse.push("Lemon");
         document.getElementById("demo7").innerHTML = fruitse;
-
-        function myFunction() {
-            fruitse.push("Lemon");
-            document.getElementById("demo7").innerHTML = fruitse;
-        }
+      }
     </script>
-
-
 
     <script>
-        const person = [];
-        person[0] = "John";
-        person[1] = "Doe";
-        person[2] = 46;
-        document.getElementById("demo8").innerHTML =
-            person[0] + " " + person.length;
+      const person = [];
+      person[0] = "John";
+      person[1] = "Doe";
+      person[2] = 46;
+      document.getElementById("demo8").innerHTML =
+        person[0] + " " + person.length;
     </script>
-
-
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript switch</h2>
+
+    <p id="demo"></p>
+
+    <h2>JavaScript switch</h2>
+
+    <p id="demo1"></p>
+
+    <h2>JavaScript switch</h2>
+
+    <p id="demo2"></p>
+
+    <h2>JavaScript switch</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+      let day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+      }
+
+      document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+
+    <script>
+      let text;
+      switch (new Date().getDay()) {
+        case 6:
+          text = "Today is Saturday";
+          break;
+        case 0:
+          text = "Today is Sunday";
+          break;
+        default:
+          text = "Looking forward to the Weekend";
+      }
+      document.getElementById("demo1").innerHTML = text;
+    </script>
+
+    <script>
+      let texts;
+      switch (new Date().getDay()) {
+        case 4:
+        case 5:
+          texts = "Soon it is Weekend";
+          break;
+        case 0:
+        case 6:
+          texts = "It is Weekend";
+          break;
+        default:
+          texts = "Looking forward to the Weekend";
+      }
+      document.getElementById("demo2").innerHTML = texts;
+    </script>
+
+    <script>
+      let x = "0";
+
+      switch (x) {
+        case 0:
+          text = "Off";
+          break;
+        case 1:
+          text = "On";
+          break;
+        default:
+          text = "No value found";
+      }
+      document.getElementById("demo3").innerHTML = text;
+    </script>
+  </body>
+</html>
