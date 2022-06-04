@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript For In Loop</h2>
+    <p>The for in statement loops through the properties of an object:</p>
+
+    <p id="demo"></p>
+
+    <h2>JavaScript For In</h2>
+    <p>The for in statement can loops over array values:</p>
+
+    <p id="demo1"></p>
+
+    <h2>JavaScript Array.forEach()</h2>
+    <p>Calls a function once for each array element.</p>
+
+    <p id="demo2"></p>
+
+    <script>
+      const person = { fname: "John", lname: "Doe", age: 25 };
+
+      let txt = "";
+      for (let x in person) {
+        txt += person[x] + " ";
+      }
+
+      document.getElementById("demo").innerHTML = txt;
+    </script>
+
+    <script>
+      const numbers = [45, 4, 9, 16, 25];
+      let text = "";
+      for (let x in numbers) {
+        text += numbers[x] + "<br>";
+      }
+
+      document.getElementById("demo1").innerHTML = text;
+    </script>
+
+    <script>
+      const numberss = [45, 4, 9, 16, 25];
+
+      let txts = "";
+      numberss.forEach(myFunction);
+      document.getElementById("demo").innerHTML = txts;
+
+      function myFunction(value, index, array) {
+        txts += value + "<br>";
+      }
+    </script>
+  </body>
+</html>
