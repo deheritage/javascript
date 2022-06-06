@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Map Objects</h2>
+    <p>Craeting a Map from an Array:</p>
+    <p id="demo"></p>
+
+    <h2>JavaScript Map Objects</h2>
+    <p>Using Map.set():</p>
+
+    <p id="demo1"></p>
+
+    <h2>JavaScript Map Objects</h2>
+    <p>Using Map.get():</p>
+
+    <p id="demo2"></p>
+
+    <h2>JavaScript Maps</h2>
+    <p>Deleting Map elements:</p>
+
+    <p id="demo3"></p>
+
+    <h2>JavaScript Maps</h2>
+    <p>Using Map.has():</p>
+
+    <p id="demo4"></p>
+
+    <h2>JavaScript Maps</h2>
+    <p>Using Map.has():</p>
+
+    <p id="demo5"></p>
+
+    <h2>JavaScript Map Objects</h2>
+    <p>Using Map.forEach():</p>
+
+    <p id="demo6"></p>
+
+    <h2>JavaScript Map Objects</h2>
+    <p>Using Map.entries():</p>
+
+    <p id="demo7"></p>
+
+    <script>
+      //Create a Map
+      const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      document.getElementById("demo").innerHTML = fruits.get("apples");
+    </script>
+
+    <script>
+      //Create a Map
+
+      const fruit = new Map();
+
+      //Set Map Values
+      fruit.set("apples", 500);
+      fruit.set("bananas", 300);
+      fruit.set("oranges", 200);
+
+      document.getElementById("demo1").innerHTML = fruit.get("bananas");
+    </script>
+
+    <script>
+      //Create a Map
+      const fruts = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      document.getElementById("demo2").innerHTML = fruts.get("oranges");
+    </script>
+
+    <script>
+      //Create a Map
+      const frutt = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      //Delete an Element
+      frutt.delete("apples");
+
+      document.getElementById("demo3").innerHTML = frutt.size;
+    </script>
+
+    <script>
+      // Create a Map
+      const frutts = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      document.getElementById("demo4").innerHTML = frutts.has("apples");
+    </script>
+
+    <script>
+      // Create a Map
+      const frits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      // Delete an Element
+      frits.delete("apples");
+
+      document.getElementById("demo5").innerHTML = frits.has("apples");
+    </script>
+
+    <script>
+      //Create a Map
+      const frutss = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      let texts = "";
+      frutss.forEach(function (value, key) {
+        texts += key + " = " + value + "<br>";
+      });
+
+      document.getElementById("demo6").innerHTML = texts;
+    </script>
+
+    <script>
+      // Create a Map
+      const fruiits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      let text = "";
+      for (const x of fruiits.entries()) {
+        text += x + "<br>";
+      }
+
+      document.getElementById("demo7").innerHTML = text;
+    </script>
+  </body>
+</html>

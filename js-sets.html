@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Sets</h2>
+    <p>Create a Set from an Array:</p>
+
+    <p id="demo"></p>
+
+    <h2>JavaScript Sets</h2>
+    <p>Add values to a Set:</p>
+
+    <p id="demo1"></p>
+
+    <h2>JavaScript Sets</h2>
+    <p>Add variables to a Set:</p>
+
+    <p id="demo2"></p>
+
+    <h2>JavaScript Sets</h2>
+    <p>Adding new elements to a Set:</p>
+
+    <p id="demo3"></p>
+
+    <h2>JavaScript Sets</h2>
+    <p>forEach() calls a function for each element:</p>
+
+    <p id="demo4"></p>
+
+    <h2>JavaScript Sets</h2>
+    <p>Iterating Set values:</p>
+
+    <p id="demo5"></p>
+
+    <script>
+      //Create a Set
+      const letters = new Set(["a", "b", "c"]);
+
+      //Display set.size
+      document.getElementById("demo").innerHTML = letters.size;
+    </script>
+
+    <script>
+      //Create a Set
+      const letter = new Set();
+      //Add Values to the Set
+      letter.add("a");
+      letter.add("b");
+      letter.add("c");
+
+      //Display set.size
+      document.getElementById("demo1").innerHTML = letter.size;
+    </script>
+
+    <script>
+      //Create a Set
+      const letterss = new Set();
+
+      //Create Variables
+      const a = "a";
+      const b = "b";
+      const c = "c";
+
+      // Add the Variables to the Set
+
+      letterss.add(a);
+      letterss.add(b);
+      letterss.add(c);
+
+      //Display set.size
+      document.getElementById("demo2").innerHTML = letterss.size;
+    </script>
+
+    <script>
+      // Create a new Set
+      const lettrs = new Set(["a", "b", "c"]);
+
+      // Add a new Element
+      lettrs.add("d");
+      lettrs.add("e");
+
+      // Display set.size
+      document.getElementById("demo3").innerHTML = lettrs.size;
+    </script>
+
+    <script>
+      //Create a Set
+      const lettes = new Set(["a", "b", "c"]);
+
+      //List all Elements
+      let text = "";
+      letters.forEach(function (value) {
+        text += value + "<br>";
+      });
+
+      document.getElementById("demo4").innerHTML = text;
+      4;
+    </script>
+
+    <script>
+      // Create a Set
+      const leters = new Set(["a", "b", "c"]);
+
+      // List all Elements
+      let txt = "";
+      for (const x of leters.values()) {
+        txt += x + "<br>";
+      }
+
+      document.getElementById("demo5").innerHTML = txt;
+    </script>
+  </body>
+</html>
