@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The JavaScript typeof Operator</h2>
+
+    <p>
+      The typeof operator returns the type of a variable, object, function or
+      expression.
+    </p>
+
+    <p id="demo"></p>
+
+    <h2>JavaScript typeof</h2>
+    <p>
+      The typeof operator returns object for both objects, arrays, and null.
+    </p>
+    <p>The typeof operator does not return object for functions.</p>
+
+    <p id="demo1"></p>
+
+    <h2>The JavaScript constructor Property</h2>
+
+    <p>
+      The constructor property returns the constructor function for a variable
+      or an object.
+    </p>
+
+    <p id="demo2"></p>
+
+    <h2>JavaScript</h2>
+
+    <p>An empty string has both a legal value and a type:</p>
+
+    <p id="demo3"></p>
+
+    <p>Objects can be emptied by setting the value to <b>null</b>.</p>
+
+    <p id="demo4"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML =
+        typeof "john" +
+        "<br>" +
+        typeof 3.14 +
+        "<br>" +
+        typeof NaN +
+        "<br>" +
+        typeof false +
+        "<br>" +
+        typeof [1, 2, 3, 4] +
+        "<br>" +
+        typeof { name: "john", age: 34 } +
+        "<br>" +
+        typeof new Date() +
+        "<br>" +
+        typeof function () {} +
+        "<br>" +
+        typeof myCar +
+        "<br>" +
+        typeof null;
+    </script>
+
+    <script>
+      document.getElementById("demo1").innerHTML =
+        typeof { name: "john", age: 34 } +
+        "<br>" +
+        typeof [1, 2, 3, 4] +
+        "<br>" +
+        typeof null +
+        "<br>" +
+        typeof function myFunc() {};
+    </script>
+
+    <script>
+      document.getElementById("demo2").innerHTML =
+        "john".constructor +
+        "<br>" +
+        (3.14).constructor +
+        "<br>" +
+        false.constructor +
+        "<br>" +
+        [1, 2, 3, 4].constructor +
+        "<br>" +
+        { name: "john", age: 34 }.constructor +
+        "<br>" +
+        new Date().constructor +
+        "<br>" +
+        function () {}.constructor;
+    </script>
+
+    <script>
+      let car = "";
+      document.getElementById("demo3").innerHTML =
+        "The value is: " + car + "<br>" + "The type is: " + typeof car;
+    </script>
+
+    <script>
+      let person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+      person = null;
+      document.getElementById("demo4").innerHTML = typeof person;
+    </script>
+  </body>
+</html>
